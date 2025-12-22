@@ -78,8 +78,8 @@ It enhances maintenance efficiency, reduces delays, and improves service quality
 
 
 - **Frontend:** Android (Java, XML, Material Design)
-- **Backend:** Java RESTful API
-- **Database:** MySQL or Firebase
+- **Backend:** Java Android
+- **Database:**  Firebase
 - **Cloud Services:** Firebase Authentication & FCM (Push Notifications)
 - **Design:** Figma (UI/UX Prototype)
 
