@@ -138,7 +138,7 @@ Using Jira helps our team maintain transparency, meet deadlines, and ensure coll
 |-------|-------------|
 | **Frontend (Mobile)** | Java (Android SDK), XML, Material Components |
 | **Backend** | Java  |
-| **Database** | MySQL /PosgreSQL |
+| **Database** | Firebase |
 | **Authentication** | Secure Login & Role-Based Access Control (Custom Implementation) |
 | **Notifications** | Local Notifications / Push Notification Integration (Future Enhancement) |
 | **Design** | Figma |
@@ -158,11 +158,27 @@ Before you begin, ensure you have the following installed and configured:
 
 - **Android Studio** (latest stable version)  
 - **Java Development Kit (JDK 17+)**  
-- **MySQL** or **PostgreSQL** database  
+- **Firebase Project (with Realtime Database or Firestore enabled)**
+ - **Google Play Services (for Firebase & Google Maps)**
 - **Git** (for cloning and version control)  
 - **Stable Internet Connection** (for Gradle and dependency downloads)
 
 ---
+###🔥 Additional Firebase-Specific Requirements
+
+ - **google-services.json file added to the app/ directory**
+
+  - **Firebase services enabled:**
+
+🔐- **Firebase Authentication**
+
+- **🗄 Firebase Realtime Database**
+
+- **Firebase dependencies added in build.gradle**
+
+- **Internet permission in AndroidManifest.xml:**
+
+- **<uses-permission android:name="android.permission.INTERNET"/>**
 
 ### 📥 Clone the Repository
 
