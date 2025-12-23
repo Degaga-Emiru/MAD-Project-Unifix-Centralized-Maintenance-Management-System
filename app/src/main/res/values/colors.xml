@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+
+    <!-- Status Colors -->
+    <color name="status_submitted">#FF9800</color>
+    <color name="status_assigned">#2196F3</color>
+    <color name="status_in_progress">#4CAF50</color>
+    <color name="status_completed">#607D8B</color>
+    <color name="status_cancelled">#F44336</color>
+    <color name="teal_700">#00796B</color>
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F5F5F5</color> <!-- ADD THIS LINE -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="dark_gray">#424242</color>
+
+    <!-- Accent Colors -->
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#F44336</color>
+    <color name="purple">#9C27B0</color>
+    <!-- Accent Colors -->
+    <color name="primary_purple">#9C27B0</color> <!-- ADD THIS -->
+    <!-- Bottom Navigation -->
+    <color name="border">#E0E0E0</color>
+    <color name="bottom_nav_selected">#2196F3</color>
+    <color name="bottom_nav_unselected">#757575</color>
+    <color name="priority_high">#FF5252</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="accent">#FF9800</color>
+    <color name="text_disabled">#9E9E9E</color>
+    <color name="bottom_nav_colors">#2196F3</color>
+    <color name="status_pending">#FFC107</color>
+    <!-- Add these to your existing colors.xml -->
+    <color name="chip_background">#F5F5F5</color>
+    <color name="rating_excellent">#4CAF50</color>
+    <color name="rating_good">#8BC34A</color>
+    <color name="rating_fair">#FFC107</color>
+    <color name="rating_poor">#FF9800</color>
+    <color name="rating_very_poor">#F44336</color>
+    <!-- Notification Colors -->
+    <color name="notification_new">#4CAF50</color>
+    <color name="notification_assigned">#2196F3</color>
+    <color name="notification_update">#FF9800</color>
+    <color name="notification_feedback">#9C27B0</color>
+    <color name="notification_alert">#F44336</color>
+    <color name="notification_read">#757575</color>
+
 </resources>
