@@ -33,6 +33,7 @@ It enhances maintenance efficiency, reduces delays, and improves service quality
 - 🧾 Submit maintenance requests with:
   - Issue category (e.g., Electrical, Plumbing, Furniture, etc.)
   - Location details (Building, Room Number)
+  - 📍 Automatic GPS location capture (Latitude & Longitude) using Google Maps
   - Description and photo upload
 - 📊 Track maintenance request status in real-time
 - 🔔 Receive push notifications for updates and completion
@@ -51,6 +52,8 @@ It enhances maintenance efficiency, reduces delays, and improves service quality
 - 📋 View assigned maintenance tasks
 - 🔄 Update task progress (Acknowledged, In Progress, Completed)
 - 📝 Add completion notes and upload evidence (e.g., photo)
+- 📍 Access precise GPS coordinates (latitude & longitude) for each task
+- 🗺️ Open reported locations directly in Google Maps for turn-by-turn navigation
 - ✅ Confirm job completion
 
 ---
