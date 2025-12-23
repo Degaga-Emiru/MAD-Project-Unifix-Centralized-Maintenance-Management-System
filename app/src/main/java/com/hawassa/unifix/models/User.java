@@ -2,11 +2,11 @@ package com.hawassa.unifix.models;
 
 public class User {
     private String firebaseUid;     // From Firebase Authentication
-    private String userId;          // Your custom User ID (from etUserId in XML)
+    private String userId;          // custom user id
     private String name;
     private String email;
     private String phone;
-    private String role;            // "student" or "staff" (based on your XML)
+    private String role;            // "student"  by default
     private long createdAt;
     private String status;          // "active", "inactive"
 
@@ -31,7 +31,7 @@ public class User {
         this.status = (status != null) ? status : "active";
     }
 
-    // Constructor for convenience (without firebaseUid - will be set separately)
+    // Constructor for convenience (without firebaseUid)
     public User(String userId, String name, String email, String phone, String role) {
         this(null, userId, name, email, phone, role, System.currentTimeMillis(), "active");
     }
