@@ -115,3 +115,90 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 });
     }
+
+
+    private void saveUserDirectly(String firebaseUid, String name, String userId,
+                                  String email, String phone, String role) {
+
+        Log.d("REGISTER_DEBUG", "Saving user to database...");
+        Log.d("REGISTER_DEBUG", "Firebase UID: " + firebaseUid);
+        Log.d("REGISTER_DEBUG", "User ID: " + userId);
+
+        // Create User object
+        User user = new User(firebaseUid, userId, name, email, phone,
+                role, System.currentTimeMillis(), "active");
+
+        Log.d("REGISTER_DEBUG", "User object created: " + user.toString());
+
+        // Save to database
+        usersRef.child(firebaseUid).setValue(user)
+                .addOnCompleteListener(task -> {
+                    showLoading(false);
+
+                    if (task.isSuccessful()) {
+                        Log.d("REGISTER_DEBUG", "✅ User saved successfully to database!");
+                        Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show();
+
+                        // ✅ CHANGED: Redirect to LOGIN page instead of dashboard
+                        redirectToLogin(role);
+                        finish();
+                    } else {
+                        Log.e("REGISTER_DEBUG", "❌ Save failed: " +
+                                (task.getException() != null ? task.getException().getMessage() : "Unknown"));
+
+                        // Delete the Firebase Auth user since database save failed
+                        mAuth.getCurrentUser().delete().addOnCompleteListener(deleteTask -> {
+                            Toast.makeText(this, "Failed to save user data. Please try again.",
+                                    Toast.LENGTH_LONG).show();
+                        });
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    showLoading(false);
+                    Log.e("REGISTER_DEBUG", "❌ Save failed with exception: " + e.getMessage());
+                    Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                });
+    }
+
+    // ✅ NEW METHOD: Redirect to Login with role information
+    private void redirectToLogin(String role) {
+        Intent intent = new Intent(this, LoginActivity.class);
+
+        // Optional: Pass role information to pre-fill radio button in login
+        intent.putExtra("registeredRole", role);
+
+        // Clear any existing tasks and start fresh
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
+        // Optional: Show a message about successful registration
+        Toast.makeText(this, "Please login with your credentials", Toast.LENGTH_SHORT).show();
+    }
+
+    private String getSelectedRole() {
+        return rgRole.getCheckedRadioButtonId() == R.id.rbStaff ? "staff" : "student";
+    }
+
+    private void redirectToDashboard(String role) {
+        Intent intent = "staff".equals(role) ?
+                new Intent(this, TechnicianDashboardActivity.class) :
+                new Intent(this, StudentDashboardActivity.class);
+
+        intent.putExtra("firebaseUid", mAuth.getCurrentUser().getUid());
+        intent.putExtra("userId", etUserId.getText().toString().trim());
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    private void showLoading(boolean isLoading) {
+        btnRegister.setEnabled(!isLoading);
+        btnRegister.setText(isLoading ? "Registering..." : "Register");
+        if (progressBar != null) {
+            progressBar.setVisibility(isLoading ? View.VISIBLE : View.GONE);
+        }
+    }
+
+    private void showError(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+}
