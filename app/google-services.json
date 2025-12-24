@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1061577203746",
+    "project_id": "unifix-hawassa",
+    "storage_bucket": "unifix-hawassa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061577203746:android:c38eaeabda52ad8cfc6a7b",
+        "android_client_info": {
+          "package_name": "com.hawassa.unifix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj9cOej_l8n3LT4kMJuL-tloxkKEDvcyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
