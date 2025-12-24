@@ -59,3 +59,59 @@ public class RegisterActivity extends AppCompatActivity {
             progressBar = new ProgressBar(this);
         }
     }
+
+    private void setupClickListeners() {
+        btnRegister.setOnClickListener(v -> registerUser());
+        tvLogin.setOnClickListener(v -> {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        });
+    }
+
+    private void registerUser() {
+        String name = etName.getText().toString().trim();
+        String userId = etUserId.getText().toString().trim();
+        String email = etEmail.getText().toString().trim();
+        String phone = etPhone.getText().toString().trim();
+        String password = etPassword.getText().toString().trim();
+        String confirmPassword = etConfirmPassword.getText().toString().trim();
+
+        // Validation (same as before)
+        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(userId) || TextUtils.isEmpty(password)) {
+            showError("Please fill required fields");
+            return;
+        }
+
+        if (!password.equals(confirmPassword)) {
+            showError("Passwords do not match");
+            return;
+        }
+
+        if (password.length() < 6) {
+            showError("Password must be at least 6 characters");
+            return;
+        }
+
+        String role = getSelectedRole();
+        String authEmail = TextUtils.isEmpty(email) ?
+                userId.toLowerCase() + "@hawassa.unifix.edu" : email;
+
+        showLoading(true);
+
+        // Step 1: Create Firebase Auth user
+        mAuth.createUserWithEmailAndPassword(authEmail, password)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+                        if (firebaseUser != null) {
+                            // ✅ SIMPLIFIED: Save user data WITHOUT checking duplicate user ID first
+                            saveUserDirectly(firebaseUser.getUid(), name, userId, email, phone, role);
+                        }
+                    } else {
+                        showLoading(false);
+                        String error = task.getException() != null ?
+                                task.getException().getMessage() : "Registration failed";
+                        Toast.makeText(this, "Auth Error: " + error, Toast.LENGTH_LONG).show();
+                    }
+                });
+    }
