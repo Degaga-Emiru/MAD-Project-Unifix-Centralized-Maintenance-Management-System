@@ -44,3 +44,37 @@
                 app:cardElevation="4dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/white">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:src="@drawable/ic_info"
+                        android:contentDescription="About Icon"
+                        app:tint="@color/primary_blue"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About Unifix"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/primary_blue"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Campus Maintenance Management System"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/text_secondary"/>
