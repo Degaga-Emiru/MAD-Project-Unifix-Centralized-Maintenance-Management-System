@@ -49,3 +49,92 @@ public class Notification {
         this.read = read;
         this.timestamp = timestamp;
     }
+
+    // Helper method to generate notification ID (doesn't depend on Firebase in constructor)
+    @Exclude
+    private String generateNotificationId() {
+        return "NOTIF-" + System.currentTimeMillis() + "-" +
+                (int)(Math.random() * 10000);
+    }
+
+    // --- Getters ---
+    public String getNotificationId() {
+        return notificationId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getReportId() {
+        return reportId;
+    }
+
+    public String getSenderId() {
+        return senderId;
+    }
+
+    public String getSenderName() {
+        return senderName;
+    }
+
+    public boolean isRead() {
+        return read;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
+    }
+
+    // --- Setters ---
+    public void setNotificationId(String notificationId) {
+        this.notificationId = notificationId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setReportId(String reportId) {
+        this.reportId = reportId;
+    }
+
+    public void setSenderId(String senderId) {
+        this.senderId = senderId;
+    }
+
+    public void setSenderName(String senderName) {
+        this.senderName = senderName;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
+    }
+
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
+    }
