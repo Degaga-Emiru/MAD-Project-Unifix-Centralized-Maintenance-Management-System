@@ -134,3 +134,32 @@
                         android:textStyle="bold"
                         android:textColor="@color/primary_blue"
                         android:layout_marginBottom="8dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Real-time maintenance reporting\n• Photo attachment for issues\n• Status tracking and notifications\n• Technician assignment system\n• Analytics and reporting dashboard\n• Multi-role access (Student, Technician, Admin)"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Benefits -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Benefits"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Faster response to maintenance issues\n• Improved communication between users and technicians\n• Better resource allocation\n• Data-driven decision making\n• Enhanced campus infrastructure management"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
