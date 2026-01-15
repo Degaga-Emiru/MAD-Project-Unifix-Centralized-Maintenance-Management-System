@@ -28,3 +28,19 @@ public class Notification {
         this.reportId = reportId;
         this.notificationId = generateNotificationId();
     }
+
+    // Full constructor
+    public Notification(String notificationId, String userId, String title,
+                        String message, String type, String reportId,
+                        String senderId, String senderName, boolean read, long timestamp) {
+        this.notificationId = notificationId;
+        this.userId = userId;
+        this.title = title;
+        this.message = message;
+        this.type = type;
+        this.reportId = reportId;
+        this.senderId = senderId;
+        this.senderName = senderName;
+        this.read = read;
+        this.timestamp = timestamp;
+    }
