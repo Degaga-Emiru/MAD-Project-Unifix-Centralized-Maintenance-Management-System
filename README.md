@@ -192,6 +192,17 @@ git clone https://github.com/<your-username>/MAD-Project-Centralized-Maintenance
 
 # Navigate into the project directory
 cd MAD-Project-Centralized-Maintenance-Management-System
+
+
+### Group Members
+| Name                | Role                          | Responsibilities                                         |
+|----------------------   |--------------------------------|----------------------------------------------------------|
+| Bontu Temesgen        | Project Manager & Lead Developer | System design, backend integration (Java), project coordination |
+| Abdi Gemechu         | UI/UX Designer                | Figma prototype design, color palette, user interface design |
+| Degaga Emiru         | Android Developer             | Frontend implementation in Android Studio, API integration |
+| Debela Jobir         | Database Engineer             | Database design, setup, and optimization |
+| Sisay Wolde          | QA & Documentation Lead       | Testing, bug tracking, report writing, and documentation |
+
 ### Some Unifix App Screenshoot
 ## Task Assignment page
 ---![taskas](https://github.com/user-attachments/assets/0642b418-7b51-4929-b970-501ce90cf384)
@@ -213,12 +224,3 @@ cd MAD-Project-Centralized-Maintenance-Management-System
 ![reg](https://github.com/user-attachments/assets/321b273b-e73c-407c-a6e6-7d369ddef2e9)
 ## Login Page
 ![login](https://github.com/user-attachments/assets/35f63801-ad15-46bb-9202-5ba81dd1f68e)
-
-### Group Members
-| Name                | Role                          | Responsibilities                                         |
-|----------------------   |--------------------------------|----------------------------------------------------------|
-| Bontu Temesgen        | Project Manager & Lead Developer | System design, backend integration (Java), project coordination |
-| Abdi Gemechu         | UI/UX Designer                | Figma prototype design, color palette, user interface design |
-| Degaga Emiru         | Android Developer             | Frontend implementation in Android Studio, API integration |
-| Debela Jobir         | Database Engineer             | Database design, setup, and optimization |
-| Sisay Wolde          | QA & Documentation Lead       | Testing, bug tracking, report writing, and documentation |
