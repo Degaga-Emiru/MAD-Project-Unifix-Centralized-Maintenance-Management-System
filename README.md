@@ -192,8 +192,28 @@ git clone https://github.com/<your-username>/MAD-Project-Centralized-Maintenance
 
 # Navigate into the project directory
 cd MAD-Project-Centralized-Maintenance-Management-System
+### Some Unifix App Screenshoot
+## Task Assignment page
+---![taskas](https://github.com/user-attachments/assets/0642b418-7b51-4929-b970-501ce90cf384)
+## Admin Dashboard Page
+![adminstu](https://github.com/user-attachments/assets/2016bae0-4037-42af-90e0-f05450f10e8e)
+## User Management Page
+![mana](https://github.com/user-attachments/assets/7e3137db-7280-4044-811c-26e0ca366e30)
+## Reports Page
+![allrep](https://github.com/user-attachments/assets/4dc1e103-fbf7-44ed-86ae-437a11e3c0f8)
+## Analytics page
+![analy](https://github.com/user-attachments/assets/52ba6bff-c02a-48f9-8220-dd6b6178fe9c)
+## Report History
+![reporthist](https://github.com/user-attachments/assets/cfc3e8ec-ccad-4038-8972-9804be6e0180)
+## Student Dashboard
+![dashstu](https://github.com/user-attachments/assets/408cad0d-cdf9-492c-a71c-b63c9f0fc218)
+## Report Page
+![rep](https://github.com/user-attachments/assets/a51d79ac-306d-40d4-b5e4-ccaf3329a8e0)
+## Registration page
+![reg](https://github.com/user-attachments/assets/321b273b-e73c-407c-a6e6-7d369ddef2e9)
+## Login Page
+![login](https://github.com/user-attachments/assets/35f63801-ad15-46bb-9202-5ba81dd1f68e)
 
----
 ### Group Members
 | Name                | Role                          | Responsibilities                                         |
 |----------------------   |--------------------------------|----------------------------------------------------------|
