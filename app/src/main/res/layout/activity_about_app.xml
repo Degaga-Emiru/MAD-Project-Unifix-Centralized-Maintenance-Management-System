@@ -78,3 +78,39 @@
                         android:gravity="center"
                         android:layout_marginTop="8dp"
                         android:textColor="@color/text_secondary"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Version 1.0.0"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_tertiary"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Content Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- What is Unifix -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What is Unifix?"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
