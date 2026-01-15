@@ -138,3 +138,45 @@ public class Notification {
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
+
+    // Helper methods
+    @Exclude
+    public String getFormattedTime() {
+        long now = System.currentTimeMillis();
+        long diff = now - timestamp;
+
+        if (diff < 60000) { // Less than 1 minute
+            return "Just now";
+        } else if (diff < 3600000) { // Less than 1 hour
+            return (diff / 60000) + " minutes ago";
+        } else if (diff < 86400000) { // Less than 1 day
+            return (diff / 3600000) + " hours ago";
+        } else {
+            return (diff / 86400000) + " days ago";
+        }
+    }
+
+    @Exclude
+    public boolean isAdminNotification() {
+        return "new_report".equals(type) || "admin_alert".equals(type);
+    }
+
+    @Exclude
+    public boolean isStudentNotification() {
+        return "task_assigned".equals(type) || "status_update".equals(type);
+    }
+
+    @Override
+    public String toString() {
+        return "Notification{" +
+                "notificationId='" + notificationId + '\'' +
+                ", userId='" + userId + '\'' +
+                ", title='" + title + '\'' +
+                ", message='" + message + '\'' +
+                ", type='" + type + '\'' +
+                ", reportId='" + reportId + '\'' +
+                ", read=" + read +
+                ", timestamp=" + timestamp +
+                '}';
+    }
+}
