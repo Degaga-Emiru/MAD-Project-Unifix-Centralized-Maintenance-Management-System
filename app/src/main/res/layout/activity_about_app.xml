@@ -193,3 +193,51 @@
                         android:textStyle="bold"
                         android:textColor="@color/primary_blue"
                         android:layout_marginBottom="8dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email: support@hawassa.unifix.edu\nPhone: +251-46-221-0000 ext. 1234\nHours: Mon-Fri, 8:00 AM - 5:00 PM\nLocation: ICT Building, Hawassa University"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- App Info -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/primary_light"
+                        android:padding="16dp"
+                        android:backgroundTint="@color/primary_light">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="App Information"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="• Version: 1.0.0 (Build 2024.01)\n• Minimum Android: 8.0 (Oreo)\n• Database: Firebase Realtime\n• Last Update: January 2024\n• License: Hawassa University"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:lineSpacingExtra="2dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
