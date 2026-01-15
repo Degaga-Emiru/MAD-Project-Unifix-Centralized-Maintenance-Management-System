@@ -204,7 +204,11 @@ cd MAD-Project-Centralized-Maintenance-Management-System
 | Sisay Wolde          | QA & Documentation Lead       | Testing, bug tracking, report writing, and documentation |
 
 ### Some Unifix App Screenshoot
-## Task Assignment page
+## Registration page
+![reg](https://github.com/user-attachments/assets/321b273b-e73c-407c-a6e6-7d369ddef2e9)
+## Login Page
+![login](https://github.com/user-attachments/assets/35f63801-ad15-46bb-9202-5ba81dd1f68e)
+## task Assignment Page
 ---![taskas](https://github.com/user-attachments/assets/0642b418-7b51-4929-b970-501ce90cf384)
 ## Admin Dashboard Page
 ![adminstu](https://github.com/user-attachments/assets/2016bae0-4037-42af-90e0-f05450f10e8e)
@@ -220,7 +224,4 @@ cd MAD-Project-Centralized-Maintenance-Management-System
 ![dashstu](https://github.com/user-attachments/assets/408cad0d-cdf9-492c-a71c-b63c9f0fc218)
 ## Report Page
 ![rep](https://github.com/user-attachments/assets/a51d79ac-306d-40d4-b5e4-ccaf3329a8e0)
-## Registration page
-![reg](https://github.com/user-attachments/assets/321b273b-e73c-407c-a6e6-7d369ddef2e9)
-## Login Page
-![login](https://github.com/user-attachments/assets/35f63801-ad15-46bb-9202-5ba81dd1f68e)
+
