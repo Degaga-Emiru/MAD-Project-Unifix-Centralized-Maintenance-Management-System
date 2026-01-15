@@ -1,3 +1,8 @@
+package com.hawassa.unifix.models;
+
+import com.google.firebase.database.Exclude;
+import com.google.firebase.database.IgnoreExtraProperties;
+
 @IgnoreExtraProperties
 public class Notification {
     private String notificationId;
