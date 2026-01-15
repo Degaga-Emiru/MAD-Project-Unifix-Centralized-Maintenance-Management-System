@@ -163,3 +163,33 @@
                         android:textColor="@color/text_primary"
                         android:layout_marginBottom="24dp"
                         android:lineSpacingExtra="4dp"/>
+
+
+                    <!-- Development Team -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Development Team"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Hawassa University IT Department\n• Software Engineering Students\n• Campus Facilities Management Team\n\nSpecial thanks to all beta testers and contributors."
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Contact & Support -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact and Support"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
