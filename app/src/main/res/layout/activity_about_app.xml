@@ -114,3 +114,23 @@
                         android:textStyle="bold"
                         android:textColor="@color/primary_blue"
                         android:layout_marginBottom="8dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unifix is a comprehensive campus maintenance management system designed for Hawassa University. It streamlines the process of reporting, tracking, and resolving maintenance issues across campus facilities."
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Key Features -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Key Features"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
