@@ -5,3 +5,13 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_blue"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Assigned Tasks"
+        app:titleTextColor="@color/white" />
