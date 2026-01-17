@@ -22,7 +22,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-
     <!-- Content -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -44,7 +43,6 @@
                 app:cardElevation="4dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/white">
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,7 +76,6 @@
                         android:gravity="center"
                         android:layout_marginTop="8dp"
                         android:textColor="@color/text_secondary"/>
-
 
                     <TextView
                         android:layout_width="match_parent"
@@ -114,3 +111,125 @@
                         android:textStyle="bold"
                         android:textColor="@color/primary_blue"
                         android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unifix is a comprehensive campus maintenance management system designed for Hawassa University. It streamlines the process of reporting, tracking, and resolving maintenance issues across campus facilities."
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Key Features -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Key Features"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Real-time maintenance reporting\n• Photo attachment for issues\n• Status tracking and notifications\n• Technician assignment system\n• Analytics and reporting dashboard\n• Multi-role access (Student, Technician, Admin)"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Benefits -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Benefits"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Faster response to maintenance issues\n• Improved communication between users and technicians\n• Better resource allocation\n• Data-driven decision making\n• Enhanced campus infrastructure management"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Development Team -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Development Team"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Hawassa University IT Department\n• Software Engineering Students\n• Campus Facilities Management Team\n\nSpecial thanks to all beta testers and contributors."
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- Contact & Support -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact and Support"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_blue"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email: support@hawassa.unifix.edu\nPhone: +251-46-221-0000 ext. 1234\nHours: Mon-Fri, 8:00 AM - 5:00 PM\nLocation: ICT Building, Hawassa University"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginBottom="24dp"
+                        android:lineSpacingExtra="4dp"/>
+
+                    <!-- App Info -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/primary_light"
+                        android:padding="16dp"
+                        android:backgroundTint="@color/primary_light">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="App Information"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="• Version: 1.0.0 (Build 2024.01)\n• Minimum Android: 8.0 (Oreo)\n• Database: Firebase Realtime\n• Last Update: January 2024\n• License: Hawassa University"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:lineSpacingExtra="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

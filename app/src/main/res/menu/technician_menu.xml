@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- More Options (Three Dots) -->
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/ic_more_vert"
+        android:title="More"
+        app:showAsAction="always">
+        <menu>
+            <!-- Settings -->
+            <item
+                android:id="@+id/menu_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings"/>
+
+            <!-- Help -->
+            <item
+                android:id="@+id/menu_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help"/>
+
+            <!-- About -->
+            <item
+                android:id="@+id/menu_about"
+                android:icon="@drawable/ic_info"
+                android:title="About"/>
+
+            <!-- Logout -->
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>
