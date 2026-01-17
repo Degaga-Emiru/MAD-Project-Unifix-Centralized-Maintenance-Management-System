@@ -1,6 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/primary_blue">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:gravity="center" android:orientation="vertical" android:padding="32dp">
+        <ImageView android:id="@+id/ivLogo" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginBottom="24dp" android:src="@drawable/university_logo"/>
+        <!--  App Name  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Unifix" android:textColor="@color/white" android:textSize="36sp" android:textStyle="bold"/>
+        <!--  Welcome Message (ADDED - was missing)  -->
+        <TextView android:id="@+id/tvWelcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Welcome to" android:textColor="@color/white" android:textSize="16sp" android:alpha="0.9"/>
+        <!--  Tagline  -->
+        <TextView android:id="@+id/tvTagline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Hawassa University-IoT Maintenance Management System" android:textColor="@color/white" android:textSize="14sp" android:textStyle="italic"/>
+        <!--  Loading Progress  -->
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@+id/progressBar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="32dp" app:indicatorColor="@color/white" app:trackColor="@color/primary_light"/>
+        <!--  Loading Text  -->
+        <TextView android:id="@+id/tvLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Loading..." android:textColor="@color/white" android:textSize="14sp"/>
+        <!--  Connection Error Message (Hidden by default)  -->
+        <LinearLayout android:id="@+id/llError" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:gravity="center" android:orientation="vertical" android:visibility="gone">
+            <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="16dp" android:src="@drawable/ic_wifi_off" app:tint="@color/white"/>
+            <TextView android:id="@+id/tvErrorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connection Interrupted" android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvErrorDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:text="Please check your internet connection and try again" android:textColor="@color/white" android:textSize="14sp"/>
+            <Button android:id="@+id/btnRetry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:backgroundTint="@color/accent" android:paddingHorizontal="32dp" android:text="Retry" android:textColor="@color/white" android:textSize="16sp"/>
+        </LinearLayout>
+        <!--  Version Info  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:text="Version 1.0.0" android:textColor="@color/white" android:textSize="12sp" android:alpha="0.7"/>
+    </LinearLayout>
+    <!--  Developer Info  -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="16dp" android:text="© 2025 Hawassa University" android:textColor="@color/white" android:textSize="12sp" android:alpha="0.7"/>
+</RelativeLayout>
