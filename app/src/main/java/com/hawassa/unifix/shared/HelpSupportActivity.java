@@ -1,4 +1,4 @@
-package com.hawassa.unifix.student;
+package com.hawassa.unifix.shared;
 
 import android.os.Bundle;
 import android.view.View;

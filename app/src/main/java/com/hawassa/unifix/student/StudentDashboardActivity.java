@@ -216,7 +216,7 @@ public class StudentDashboardActivity extends AppCompatActivity {
     }
 
     private void openHelp() {
-        Intent intent = new Intent(this, HelpSupportActivity.class);
+        Intent intent = new Intent(this, com.hawassa.unifix.student.HelpSupportActivity.class);
         startActivity(intent);
     }
 
