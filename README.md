@@ -6,7 +6,7 @@
 **UniFix:**
 
 Mobile-based maintenance management app for Hawassa University that simplifies reporting, tracking and resolving maintenance issues across campus. 
-
+o
 ## 👥 User Personas
 
 Our users include Computer Science students at Hawassa University – Institute of Technology (IOT), who face challenges in reporting maintenance issues and tracking their progress efficiently; maintenance technicians, who experience confusion and task duplication when handling requests on paper and seek a digital system to manage and update tasks clearly; and maintenance administrators, who find it difficult to track and assign repair requests manually and need a centralized dashboard to monitor all ongoing tasks and ensure accountability.
