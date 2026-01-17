@@ -1,1 +1,13 @@
-/build
+# Ignore Gradle files
+.gradle/
+build/
+
+# Ignore Android Studio files
+.idea/
+local.properties
+
+# Ignore log files
+*.log
+
+# Ignore generated files
+*.iml
